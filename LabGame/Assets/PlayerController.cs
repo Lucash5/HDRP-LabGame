@@ -4,15 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
-    //Pelaajan nopeus
+    bool wtf;
     //public UnityEngine.UI.Text Text;
     public bool alive = true;
     public float speed = 350;
     public float jumpForce = 350;
-
+    public AudioSource AS;
 
     Rigidbody rb;
-    Vector3 playerInput; // pelaajan syötteen tallennukseen
+    Vector3 playerInput; 
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +29,16 @@ public class PlayerController : MonoBehaviour
         playerInput += transform.right * Input.GetAxis("Horizontal") * speed;
         playerInput.y = rb.velocity.y;
 
+
+        if ((Input.GetAxisRaw("Vertical") > 0 || Input.GetAxisRaw("Horizontal") > 0) && AS.isPlaying == false)
+        {
+            wtf = true;
+            AS.Play();
+        }
+        else if (Input.GetAxisRaw("Vertical") == 0 && Input.GetAxisRaw("Horizontal") == 0)
+        {
+           AS.Stop();
+        }
 
         if (rb.velocity.y > -0.05f && rb.velocity.y < 0.05f)
         {
