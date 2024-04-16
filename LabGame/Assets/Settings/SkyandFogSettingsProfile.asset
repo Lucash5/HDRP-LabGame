@@ -189,7 +189,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
   focusMode:
     m_OverrideState: 1
     m_Value: 1
@@ -213,19 +213,19 @@ MonoBehaviour:
     m_Value: 20
   m_NearSampleCount:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: 5
   m_NearMaxBlur:
     m_OverrideState: 1
-    m_Value: 7
+    m_Value: 4
   m_FarSampleCount:
     m_OverrideState: 1
-    m_Value: 14
+    m_Value: 7
   m_FarMaxBlur:
     m_OverrideState: 1
-    m_Value: 13
+    m_Value: 8
   m_Resolution:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   m_HighQualityFiltering:
     m_OverrideState: 1
     m_Value: 1
@@ -1165,13 +1165,13 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.9735107, y: 0.9903746, z: 1, w: -0.02317497}
+    m_Value: {x: 0.9780018, y: 0.9902599, z: 1, w: 7.3232664e-10}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 0.95534503, y: 0.93915707, z: 1, w: -0.04634995}
+    m_Value: {x: 0.9754055, y: 0.98488677, z: 1, w: -0.0000000015160373}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.91091555, y: 1, z: 0.99058676, w: 0.023174975}
+    m_Value: {x: 0.93778497, y: 0.93400687, z: 1, w: 7.5801865e-10}
 --- !u!114 &7642060734654139733
 MonoBehaviour:
   m_ObjectHideFlags: 3
